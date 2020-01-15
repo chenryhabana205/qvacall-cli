@@ -13,6 +13,11 @@
   "preferGlobal": true,
   "author": "chenryhabana205<chenryhabana205@gmail.com>",
   "license": "MIT",
+  "keywords": ["etecsa", "cli", "tools", "access"],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/chenryhabana205/qvacall-cli.git"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "form-data": "^3.0.0",
