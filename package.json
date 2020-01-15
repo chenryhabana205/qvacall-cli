@@ -1,6 +1,6 @@
 {
   "name": "qvacall-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pequeña herramienta para conectarse y mantenerse conectado a la red de etecsa desde el pc. Basado en el https://github.com/danielpza/etecsa-cli",
   "main": "./src/index.js",
   "scripts": {
