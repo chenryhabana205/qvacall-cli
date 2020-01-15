@@ -2,13 +2,14 @@ const api = require("./core");
 const { resolve } = require("path");
 const { readFile: readFileCb, writeFile: writeFileCb, existsSync, mkdirSync } = require("fs");
 const { promisify } = require("util");
+const os = require('os');
 
 const readFile = promisify(readFileCb);
 const writeFile = promisify(writeFileCb);
 
 const configDir = resolve(
-    process.env.XDG_CACHE_HOME || resolve(process.env.HOME || "~/", ".cache")
-);
+    process.env.XDG_CACHE_HOME || resolve(process.env.HOME || os.homedir(), ".cache")
+)
 
 const configFile = resolve(
     configDir,
