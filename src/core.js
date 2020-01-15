@@ -24,7 +24,7 @@ async function logout(config) {
     if (await status()) {
         cookieJar = CookieJar.fromJSON(config.cookies)
         // cookieJar = config.cookies.fromJSON()
-        console.log(config.uuid)
+        // console.log(config.uuid)
         const { body } = await got.get(ETECSA_LOGOUT + '?ATTRIBUTE_UUID=' + config.uuid, {});
         console.log(body)
         if (!body.match(/success/i)) {
