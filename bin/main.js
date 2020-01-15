@@ -33,7 +33,7 @@ function handleError(err) {
 
 function showHelp() {
   console.log(`\
-$ etecsa command
+$ qc command
 
 Usage
 
@@ -47,11 +47,11 @@ Usage
 
 Example
 
-  $ etecsa set myuser mypass
-  $ etecsa login
-  $ etecsa status
+  $ qc set myuser mypass
+  $ qc login
+  $ qc status
   Connected
-  $ etecsa time
+  $ qc time
   00:34:48
 `);
 }
