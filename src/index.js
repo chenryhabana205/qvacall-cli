@@ -24,6 +24,7 @@ async function login() {
 
 async function logout() {
     const { user, pass, config } = await readConfig();
+    // console.log(config)
     await api.logout(config);
     console.log("Logged out");
     await writeConfig({ user, pass });

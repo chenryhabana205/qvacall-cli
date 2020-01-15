@@ -16,17 +16,17 @@ async function login(username, password) {
     const params = await getLoginParameters();
     const loginParams = { ...params, username, password };
     const loginResponse = await postLogin(loginParams);
-    console.log(loginResponse)
+    // console.log(loginResponse)
     return loginResponse;
 }
 
 async function logout(config) {
     if (await status()) {
-        cookieJar = CookieJar.fromJSON(config.cookies)
+        // cookieJar = CookieJar.fromJSON(config.cookies)
         // cookieJar = config.cookies.fromJSON()
-        // console.log(config.uuid)
+        // console.log(ETECSA_LOGOUT)
         const { body } = await got.get(ETECSA_LOGOUT + '?ATTRIBUTE_UUID=' + config.uuid, {});
-        console.log(body)
+        // console.log(body)
         if (!body.match(/success/i)) {
             throw new Error("Error disconnecting");
         }
