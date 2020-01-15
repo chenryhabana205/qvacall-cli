@@ -3,5 +3,7 @@ el objetivo final es tener una web que permita controlar el estado de la conexio
 las 5 horas de forma tal que virtualmente se mantenga todo conectado.
 Mientras se logra agregar al npm, puede descargar el repo o clonarlo e instalarlo globalmente
 npm i -g <ruta de la carpeta descargada>
+desde npm repo
+npm i -g qvacall-cli
 Luego puede ser usado desde la consola llamándolo
 qc
